@@ -24,7 +24,7 @@ class RequestForm(FlaskForm):
     reg_no = IntegerField("Doctor's Register Number")
     blood_group = StringField("Which Blood Group Do You Need?", validators=[DataRequired()])
     date_details = StringField("Date of the Blood Drive", validators=[DataRequired()])
-    address = TextAreaField("Address where the drive will be held", validators=[DataRequired()])
-    details = TextAreaField("Details of the blood drive", validators=[DataRequired()])
+    address = StringField("Address where the drive will be held", validators=[DataRequired()])
+    details = StringField("Details of the blood drive", validators=[DataRequired()])
     submit = SubmitField("submit")
 

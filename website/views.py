@@ -97,3 +97,14 @@ def dashboard():
     users = User.query.all()
     return render_template("dashboard.html", users=users, user=current_user)
 
+@views.route('/terms')
+def terms():
+    return render_template("terms.html", user=current_user)
+
+@views.route('/privacy')
+def privacy():
+    return render_template("privacy.html", user=current_user)
+
+@views.route('/faq')
+def faq():
+    return render_template("faq.html", user=current_user)

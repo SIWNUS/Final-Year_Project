@@ -26,27 +26,27 @@
 
         <p>
            {{ form.blood_group.label }} <br>
-           {{form.blood_group(size=10, value=request_to_update.blood_group)}}
+           {{form.blood_group(value=request_to_update.blood_group)}}
         </p>
     
 
    
         <p>
            {{ form.date_details.label }} <br> 
-           {{ form.date_details(size=50, value=request_to_update.date_details) }}
+           {{ form.date_details(value=request_to_update.date_details) }}
         </p>
     
 
    
         <p>
            {{ form.address.label }} <br>
-           {{ form.address(size=200, value=request_to_update.address) }}
+           {{ form.address(value= request_to_update.address) }}
         </p>    
 
    
         <p>
            {{ form.details.label }} <br>
-           {{form.details(size=4000, value=request_to_update.details)}}</p>
+           {{form.details(value=request_to_update.details)}}</p>
     
 
         <p>{{ form.submit() }}</p>
